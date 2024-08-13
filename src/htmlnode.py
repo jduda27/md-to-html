@@ -9,9 +9,10 @@ class HTMLNode():
         raise NotImplementedError("HTML conversion is not yet implemented")
 
     def props_to_html(self):
-        result = " "
-        for tag in self.props:
-            result = result+tag+"=\""+self.props[tag]+"\" "
+        result = ""
+        if self.props is not None:
+            for tag in self.props:
+                result = result+" "+tag+"=\""+self.props[tag]+"\""
         return result
 
     def __repr__(self):

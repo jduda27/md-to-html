@@ -29,4 +29,4 @@ class testHTMLNode(unittest.TestCase):
             "id": "helloworld",
         })
         self.assertEqual(node.props_to_html(),
-                         " class=\"test\" id=\"helloworld\" ")
+                         " class=\"test\" id=\"helloworld\"")
